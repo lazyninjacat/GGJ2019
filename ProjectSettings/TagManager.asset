@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - head
+  - jackass
+  - rando
+  - winzone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: forground
+    uniqueID: 2146692681
+    locked: 0
+  - name: midground
+    uniqueID: 3708723801
+    locked: 0
+  - name: background
+    uniqueID: 3249864327
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
