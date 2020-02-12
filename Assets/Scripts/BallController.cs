@@ -43,7 +43,7 @@ public class BallController : MonoBehaviour {
 	void Start () {
 
 
-		rb2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>();
 		micScript = GetComponent<VolumeCapture>();
 		micScript.Init();
 		ball = GetComponent<SpriteRenderer>();
@@ -195,7 +195,7 @@ public class BallController : MonoBehaviour {
         {
             return maxSpeed;
         }
-        else if (percent <= 0)
+        else if (percent <= 0.4f)
         {
             return 0f;
         }
@@ -211,7 +211,7 @@ public class BallController : MonoBehaviour {
 
         h = GetPowa(micScript.DbValue);
         currentSpeed = h;
-        if(h != 30)
+        if(h != 60)
         {
             Debug.Log("H: " + h.ToString());
 

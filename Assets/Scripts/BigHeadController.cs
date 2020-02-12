@@ -17,7 +17,7 @@ public class BigHeadController : MonoBehaviour {
 	[SerializeField] private QuoteGeneratorController quoteGenerator;
 	[SerializeField] private float changeQuoteSeconds;
 
-	private const int intervals = 15;
+	private const int intervals = 9;
 
 	private Transform originalPosition;
 
