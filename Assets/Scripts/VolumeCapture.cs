@@ -92,27 +92,27 @@ public class VolumeCapture : MonoBehaviour
             _currentDbs = DbValue;
         }
         volumeText.text = "Volume: " + DbValue.ToString();
-        /*
-            if (DbValue < -30f)
-            {
-                Debug.Log("TOO QUIET PUMP IT UP! \n ");
-            }
-            else if (DbValue > -30f && DbValue < -10f)
-            {
-                Debug.Log("sHOt FiRED! \n ");
-            }
-            else if (DbValue > -10f && DbValue < 0f)
-            {
-                Debug.Log("DOU DOU DOU DOUBLE SHOT!!! \n ");
-            }
-            else if (DbValue > 0f && DbValue < 10f)
-            {
-                Debug.Log("trip THAT SHOT UP YO! \n ");
-            }
-            else if (DbValue > 10f)
-            {
-                Debug.Log("IMMMMMMMAAAAAAA FIRE MA LASER! \n ");
-            }
-        */
+
+        if (DbValue < -30f)
+        {
+            Debug.Log("TOO QUIET PUMP IT UP! \n ");
+        }
+        else if (DbValue > -30f && DbValue < -10f)
+        {
+            Debug.Log("sHOt FiRED! \n ");
+        }
+        else if (DbValue > -10f && DbValue < 0f)
+        {
+            Debug.Log("DOU DOU DOU DOUBLE SHOT!!! \n ");
+        }
+        else if (DbValue > 0f && DbValue < 10f)
+        {
+            Debug.Log("trip THAT SHOT UP YO! \n ");
+        }
+        else if (DbValue > 10f)
+        {
+            Debug.Log("IMMMMMMMAAAAAAA FIRE MA LASER! \n ");
+        }
+
     }
 }

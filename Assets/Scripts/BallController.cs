@@ -184,13 +184,18 @@ public class BallController : MonoBehaviour {
     {
         float adjustedDbs = input + maxDb;
         float percent = (((adjustedDbs - minDb)) / (maxDb - minDb));
-        Debug.Log("PERCENT IS: " + percent.ToString());
+
+        if (percent != 1)
+        {
+            Debug.Log("PERCENT IS: " + percent.ToString());
+
+        }
 
         if (percent > 1f)
         {
             return maxSpeed;
         }
-        else if (percent <= 0f)
+        else if (percent <= 0)
         {
             return 0f;
         }
@@ -206,10 +211,15 @@ public class BallController : MonoBehaviour {
 
         h = GetPowa(micScript.DbValue);
         currentSpeed = h;
-        Debug.Log("H: " + h.ToString());
+        if(h != 30)
+        {
+            Debug.Log("H: " + h.ToString());
 
-        if(micStarted)
-        rb2d.AddForce(Vector2.right * h);
+        }
+
+        if (micStarted)
+        rb2d.AddForce(
+            Vector2.right * h);
     }
 
 }
