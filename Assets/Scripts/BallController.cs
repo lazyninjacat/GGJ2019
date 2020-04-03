@@ -21,7 +21,7 @@ public class BallController : MonoBehaviour {
     public float maxDb = 90f;
     public float minDb = 45f;
 	public float moveForce = 365f;//365f;
-	public float maxSpeed = 40f;
+	public float maxSpeed = 120f;
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
     public float currentSpeed = 0;
@@ -48,6 +48,7 @@ public class BallController : MonoBehaviour {
 		micScript.Init();
 		ball = GetComponent<SpriteRenderer>();
 		headController = GameObject.FindGameObjectWithTag("head").GetComponent<BigHeadController>();
+        Player1MicOn();
 	}
 	
 	// Update is called once per frame
